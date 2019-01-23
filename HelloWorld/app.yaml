@@ -1,8 +1,9 @@
 runtime: aspnetcore
-
 env: flex
-
 service: micro
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/bandlavenubabu/GCP.git']
 
 manual_scaling:
   instances: 1
