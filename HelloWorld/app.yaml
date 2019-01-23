@@ -9,7 +9,7 @@ steps:
   args: [ 'publish', '-c', 'Release' ]
   dir: 'GCP/HelloWorld/'
  - name: 'gcr.io/cloud-builders/gcloud'
-  args: [ 'app deploy', './bin/Release/netcoreapp2.1/publish/appdeploy.yaml' ]
+  args: [ 'deploy', './bin/Release/netcoreapp2.1/publish/appdeploy.yaml' ]
   #dir: 'GCP/HelloWorld/' 
 #manual_scaling:
  # instances: 1
