@@ -1,5 +1,7 @@
 runtime: aspnetcore
+
 env: flex
+
 service: micro
 
 manual_scaling:
