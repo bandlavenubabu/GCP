@@ -1,10 +1,9 @@
-steps:
-      name: gcr.io/cloud-builders/git
-      args: ['fetch', '--unshallow']
 runtime: aspnetcore
 env: flex
 service: micro
-
+    steps:
+    - name: gcr.io/cloud-builders/git
+      args: ['fetch', '--unshallow']   
 manual_scaling:
   instances: 1
 resources:
