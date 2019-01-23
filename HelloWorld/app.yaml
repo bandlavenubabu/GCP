@@ -1,6 +1,6 @@
-runtime: aspnetcore
+#runtime: aspnetcore
 #env: flex
-service: micro
+#service: micro
 steps:
 - name: 'gcr.io/cloud-builders/git'
   args: ['clone', 'https://github.com/bandlavenubabu/GCP.git']
