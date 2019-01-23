@@ -4,8 +4,11 @@
 steps:
 - name: 'gcr.io/cloud-builders/git'
   args: ['clone', 'https://github.com/bandlavenubabu/GCP.git']
+- name: 'gcr.io/$PROJECT_ID/gcloud'
+  args: ['cd','GCP/HelloWorld/']
 - name: 'gcr.io/cloud-builders/dotnet'
   args: [ 'publish', '-c', 'Release' ]
+  
 #manual_scaling:
  # instances: 1
   
