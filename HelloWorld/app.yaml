@@ -20,7 +20,7 @@ steps:
   dir: '/workspace/GCP/HelloWorld/deploy-build'
 - name: 'alpine'
   args: ['ls', '-la']
-  dir: '/workspace/GCP/HelloWorld/bin'
+  dir: '/workspace/GCP/HelloWorld/deploy-build/publish/'
 - name: 'alpine'
   args: ['ls', '-la']
   dir: '/workspace/GCP/HelloWorld/bin/Release'
