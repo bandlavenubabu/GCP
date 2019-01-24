@@ -13,7 +13,7 @@ steps:
   args: ['mkdir', 'deploy-build']
   dir: 'GCP/HelloWorld/'
 - name: 'ubuntu'
-  args: ['cp', '/bin/Release/netcoreapp2.1/publish', 'deploy-build/']
+  args: ['cp', 'GCP/HelloWorld/', 'deploy-build/']
   dir: 'GCP/HelloWorld/'
 - id: "Deploy to AppEngine"
   name: 'gcr.io/cloud-builders/gcloud'
