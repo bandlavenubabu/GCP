@@ -26,7 +26,7 @@ steps:
   dir: '/workspace/GCP/HelloWorld/bin/Release/netcoreapp2.1/publish'
 - id: "Deploy to AppEngine"
   name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', '/workspace/GCP/HelloWorld/bin/Release/netcoreapp2.1/publish/app.yaml']
+  args: ['app', 'deploy', '/workspace/GCP/HelloWorld/bin/Release/netcoreapp2.1/publish/app.yaml','--log-http','--verbosity=debug']
 #  dir: 'GCP/HelloWorld/'
 
 
