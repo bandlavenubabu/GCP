@@ -17,13 +17,13 @@ steps:
   dir: 'GCP/HelloWorld/'
 - name: 'alpine'
   args: ['ls', '-la']
-  dir: '/workspace/GCP/HelloWorld/deploy-build'
-- name: 'alpine'
-  args: ['ls', '-la']
   dir: '/workspace/GCP/HelloWorld/deploy-build/publish/'
 - name: 'alpine'
   args: ['ls', '-la']
-  dir: '/workspace/GCP/HelloWorld/bin/Release'
+  dir: '/workspace/GCP/HelloWorld/deploy-build/netcoreapp2.1/'
+- name: 'alpine'
+  args: ['ls', '-la']
+  dir: '/workspace/GCP/HelloWorld/bin/Release/netcoreapp2.1/publish'
 - id: "Deploy to AppEngine"
   name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy', '/workspace/GCP/HelloWorld/bin/Release/netcoreapp2.1/publish/appdeploy.yaml']
